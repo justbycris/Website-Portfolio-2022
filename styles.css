@@ -22,7 +22,9 @@
     height: 50px;
     width: 100%;
     background-color: #fff;
-    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
   }
   
   .nav > .nav-header {
@@ -122,17 +124,29 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    margin: 0;
-    background-color: pink;
+    margin: 20px 0 0 0;
+    /* background-color: pink; */
     padding: 0;
     box-sizing: border-box;
 }
 
+.left-container{
+  width: 600px;
+    flex-grow: 2 2;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 .image-1 {
+    position: relative;
     max-width: 400px;
     margin: 0;
+    padding: 0;
+   
 }   
 
 h1 {
     font-size: 40px;
 }
+
+
