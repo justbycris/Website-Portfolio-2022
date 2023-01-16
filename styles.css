@@ -170,3 +170,32 @@ p {
 
 }
 
+/*-------------WORK SECTION-------------*/
+
+.work-page {
+  margin-top: 50px;
+}
+
+.work-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+}
+
+.work-description {
+  position: absolute;
+  max-width: 280px;
+}
+
+.work-box {
+  max-width: 280px;
+  margin: 0 25px;
+}
+
+.work-img {
+
+  width: 280px;
+  height: auto;
+  
+}
