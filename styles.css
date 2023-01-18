@@ -173,17 +173,34 @@ p {
 /*-------------WORK SECTION-------------*/
 
 .work-page {
-  margin-top: 20px;
-  
-
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 90vw;
+  height: 100vh;
+  margin: 0 auto;
 }
 
 .arrow {
-  position: absolute;
   display: inline-block;
-  width: 200px;
   color: #000000;
-  top: 50%;
+  top: 40%;
+  margin: 0 auto;
+  cursor: pointer;
+  width: 80px;
+}
+
+.img-arrow {
+  max-width: 80px;
+}
+
+.arrow:active {
+  width: 70px;
+}
+
+.img-arrow:active {
+  width: 70px;
 }
 
 .work-container {
@@ -192,13 +209,15 @@ p {
   justify-content:flex-start;
   align-items: center;
   align-content: center;
-  width: 70vw;
+  width: 60vw;
   height: fit-content;
   flex-wrap: nowrap;
   overflow-x: auto;
   margin: 0 auto;
   -ms-overflow-style: scroll;  
     scrollbar-width: none;  
+ 
+  padding: 0;
 }
 
 .work-container::-webkit-scrollbar {
@@ -210,9 +229,9 @@ p {
   min-width: 280px;
   max-width: 281px;
   height: 450px;
-  margin: 90px 20px;
-  overflow-y: hidden;
- 
+  margin: 90px 20px 90px 0;
+  overflow-y: hidden; 
+  box-sizing: border-box;
 }
 
 .work-box:hover {

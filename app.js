@@ -35,14 +35,16 @@ function changeImage() {
   /*---------------WORK: SLIDE HORIZONTAL PROJECT CONTAINER ----------*/
   var button = document.getElementById('slide');
 button.onclick = function () {
-    var container = document.getElementById('container');
-    sideScroll(container,'right',25,100,10);
+    var container = document.getElementById('project-container');
+    sideScroll(container,'right',16,350,10);
+    console.log('right works')
 };
 
 var back = document.getElementById('slideBack');
 back.onclick = function () {
-    var container = document.getElementById('container');
-    sideScroll(container,'left',25,100,10);
+    var container = document.getElementById('project-container');
+    sideScroll(container,'left',16,350,10);
+    console.log('left works')
 };
 
 function sideScroll(element,direction,speed,distance,step){
@@ -59,3 +61,4 @@ function sideScroll(element,direction,speed,distance,step){
         }
     }, speed);
 }
+
