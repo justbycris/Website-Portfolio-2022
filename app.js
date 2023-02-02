@@ -36,14 +36,14 @@ function changeImage() {
   var button = document.getElementById('slide');
 button.onclick = function () {
     var container = document.getElementById('project-container');
-    sideScroll(container,'right',16,350,10);
+    sideScroll(container,'right',16,310,10);
     console.log('right works')
 };
 
 var back = document.getElementById('slideBack');
 back.onclick = function () {
     var container = document.getElementById('project-container');
-    sideScroll(container,'left',16,350,10);
+    sideScroll(container,'left',16,310,10);
     console.log('left works')
 };
 
