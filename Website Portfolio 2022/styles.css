@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+
+  /*--------NAV MENU---------*/
+  
+  .nav {
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #1e1e1e;
+    padding: 10px 10px 10px 15px;
+
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-right:20px;
+    
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    color: #1e1e1e;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+
+  /*----------MEDIA QUERIES----------*/
+  
+  @media (max-width:640px) {
+
+    /*------------NAV MENU-----------*/
+
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 3px solid #1e1e1e;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+
+    /*-------------HOME - LEFT CONTAINER ------------*/
+    .left-container {
+      text-align: center;
+    }
+
+
+  }
+
+  /*----------HOME PAGE----------*/
+
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 20px 0 0 0;
+    /* background-color: pink; */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.left-container{
+  width: 600px;
+    flex-grow: 2 2;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 50px 0 20px 0;
+}
+
+.image-1 {
+    position: relative;
+    max-width: 400px;
+    margin: 0;
+    padding: 0;
+   
+}   
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 28px;
+
+}
+
+/*-------------WORK SECTION-------------*/
+
+.work-page {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 90vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.arrow {
+  display: inline-block;
+  color: #000000;
+  top: 40%;
+  margin: 0 auto;
+  cursor: pointer;
+  width: 50px;
+}
+
+.img-arrow {
+  max-width: 50px;
+}
+
+.arrow:active {
+  width: 50px;
+}
+
+.img-arrow:active {
+  width: 50px;
+}
+
+.work-container {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: center;
+  align-content: center;
+  width: 68vw;
+  height: 63%;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  margin: 0 auto;
+  -ms-overflow-style: scroll;  
+    scrollbar-width: none;  
+  padding: 0;
+  border-bottom: 10px solid black;
+
+}
+
+.work-container::-webkit-scrollbar {
+  overflow-x: scroll;
+  height: 5px; 
+  color: #1e1e1e;
+}
+
+.work-box {
+  position: relative;
+  min-width: 280px;
+  max-width: 281px;
+  height: 100%;
+  margin: 0 10px;
+  overflow-y: hidden; 
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.work-box:hover {
+  cursor: pointer;
+}
+
+.work-description {
+  display: block;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+}
+
+.work-box:hover .overlay{
+  /* transform: translateY(400px); */
+  /* height: 0; */
+  top: 1000px; 
+  transition:  .5s ease-in-out;
+}
+
+.work-img {
+  background-color: white;
+  width: 100%;
+}
+
+.btn-work {
+  width: 100px;
+  outline: 2px solid black;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  margin: 8px auto ;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-container {
+  display: flex; 
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+/*----------CONTACT FORM--------------*/
+
+ /* Style inputs with type="text", select elements and textareas */
+ input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container-contact {
+  margin: 80px auto auto;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  max-width: 80%;
+} 
