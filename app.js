@@ -62,3 +62,4 @@ function sideScroll(element,direction,speed,distance,step){
     }, speed);
 }
 
+
