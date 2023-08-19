@@ -97,7 +97,7 @@
   }
   
   .nav > .nav-links > a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgb(228, 228, 228);
   }
   
   .nav > #nav-check {
@@ -115,9 +115,8 @@
     justify-content:space-evenly;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     margin: 20px 0 0 0;
-    /* background-color: pink; */
     padding: 0;
     box-sizing: border-box;
 }
@@ -135,7 +134,7 @@
     max-width: 400px;
     margin: 0;
     padding: 0;
-   
+   top: 30px;
 }   
 
 h1 {
@@ -163,14 +162,14 @@ p {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 auto 15px auto;
   width: 100%;
 }
 
 .skill {
-  width: 100px;
+  width: 60px;
   height: auto;
-  margin: 20px 10px 0 0;
+  margin: 20px 18px 0 0;
 }
 
 .skills-title {
@@ -344,7 +343,7 @@ p {
   
 @media only screen and (max-width:640px) {
 
-  /*------------MQ: NAV MENU-----------*/
+  /*------------ NAV MENU-----------*/
 
   .nav > .nav-btn {
     display: inline-block;
@@ -359,7 +358,7 @@ p {
     padding: 13px;
   }
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #ebebeb;;
   }
   .nav > .nav-btn > label > span {
     display: block;
@@ -390,13 +389,13 @@ p {
     overflow-y: auto;
   }
 
-  /*-------------MQ: HOME  ------------*/
+  /*-------------HOME  ------------*/
   .left-container {
     text-align: center;
   }
 
 
-  /*------MQ: WORK SECTION------*/
+  /*------WORK SECTION------*/
 
   .skill {
     margin: 0;
