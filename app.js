@@ -62,4 +62,19 @@ function sideScroll(element,direction,speed,distance,step){
     }, speed);
 }
 
+//CONTACT PAGE: COPY EMAIL
+
+function copyEmail() {
+    var copyText = document.getElementById("email");
+    var emailText = "CRISTIGTZNAME@GMAIL.COM";
+  
+     // Copy the text inside the text field
+    navigator.clipboard.writeText(copyText.innerHTML);
+    
+    // Change text and return to email
+    copyText.innerHTML = "EMAIL COPIED!";
+    setTimeout(function() {
+    copyText.innerHTML = emailText;
+  }, 400);
+  } 
 
