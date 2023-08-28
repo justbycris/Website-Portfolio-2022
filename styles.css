@@ -162,7 +162,7 @@ p {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  margin: 0 auto 15px auto;
+  margin: 20px auto 15px auto;
   width: 100%;
 }
 
@@ -222,7 +222,7 @@ p {
   height: 440px;
   flex-wrap: nowrap;
   overflow-x: auto;
-  margin: 0 auto;
+  margin: 60px auto 0 auto;
   -ms-overflow-style: scroll;  
     scrollbar-width: none;  
   padding: 0;
@@ -269,6 +269,7 @@ p {
   bottom: 0;
   right: 0;
   top: 0;
+ 
 }
 
 .work-box:hover .overlay{
@@ -281,6 +282,19 @@ p {
 .work-img {
   background-color: white;
   width: 100%;
+}
+
+.btn-container {
+  position: absolute;
+  width: 200px;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  bottom: 10px; 
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(-50%);
 }
 
 .btn-work {
@@ -302,14 +316,6 @@ p {
   color: #ffffff;
 }
 
-.btn-container {
-  position: absolute;
-  width: 240px;
-  display: flex; 
-  flex-direction: column;
-  justify-content: center;
-  bottom: 10px; 
-}
 
 /*----------CONTACT FORM--------------*/
 .container-contact {

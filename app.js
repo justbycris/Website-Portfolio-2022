@@ -78,3 +78,8 @@ function copyEmail() {
   }, 400);
   } 
 
+  function mobileOverlay () {
+    var overlays = document.getElementsByClassName('overlay');
+ ``
+
+  }
