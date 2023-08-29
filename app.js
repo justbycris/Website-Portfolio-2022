@@ -30,13 +30,11 @@ function changeImage() {
       // clearInterval(inst); // uncomment this to stop refreshing after one cycle
     }
   }
-
-
   /*---------------WORK: SLIDE HORIZONTAL PROJECT CONTAINER ----------*/
   var button = document.getElementById('slide');
 button.onclick = function () {
     var container = document.getElementById('project-container');
-    sideScroll(container,'right',16,310,10);
+    sideScroll(container,'right',16,260,10);
     console.log('right works')
 };
 
