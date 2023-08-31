@@ -78,6 +78,10 @@ function copyEmail() {
 
   function mobileOverlay () {
     var overlays = document.getElementsByClassName('overlay');
- ``
 
   }
+
+  //--------------------TEST REVEALL WHEN SCROLLING
+
+  
+  
