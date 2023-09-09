@@ -16,7 +16,7 @@
 
 /*------------CHANGE THE HOME IMAGE------------*/
 
-var imagesOptions = [ "Images/NYC-PhotoArt.png", "Images/CoverPhotography.png","Images/Portrait_2.png", "Images/StatueLiberty-DigitalArt.png", "Images/DigitalCollage.png","Images/Portrait.png"];
+var imagesOptions = [ "Images/NYC-PhotoArt.webp", "Images/CoverPhotography.webp","Images/Portrait_2.webp", "Images/StatueLiberty-DigitalArt.webp", "Images/DigitalCollage.webp","Images/Portrait.webp"];
 var counter2 = 0;
 var imgToChange = document.getElementById("changeImg");
 var inst = setInterval(changeImage, 1000);
