@@ -195,13 +195,13 @@ p {
   display: inline-block;
   color: #000000;
   top: 10%;
-  margin: 0 auto;
+  margin: 0;
   cursor: pointer;
-  width: 50px;
+  width: 40px;
 }
 
 .img-arrow {
-  max-width: 40px;
+  width: 40px;
 }
 
 .arrow:active {
@@ -222,7 +222,7 @@ p {
   height: 440px;
   flex-wrap: nowrap;
   overflow-x: auto;
-  margin: 60px auto 0 auto;
+  margin: 60px 20px 0 20px;
   -ms-overflow-style: scroll;  
     scrollbar-width: none;  
   padding: 0;
